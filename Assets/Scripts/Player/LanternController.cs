@@ -8,6 +8,7 @@ using UnityEngine.Rendering.Universal;
 public class LanternController : MonoBehaviour
 {
     [Tooltip("Layer of the monster. Used to detect it using raycast.")]
+    [SerializeField] private MonsterAI monster;
     [SerializeField] private LayerMask monsterLayer;
     [SerializeField] private UnityEvent onMonsterDetected;
     [SerializeField] private UnityEvent onMonsterUndetected;
@@ -28,6 +29,11 @@ public class LanternController : MonoBehaviour
     private void Update()
     {
         CheckTargets();
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            ToggleLight(!lanternLight.enabled);
+        }
     }
 
     private void CheckTargets()
@@ -54,7 +60,7 @@ public class LanternController : MonoBehaviour
 
         for (int i = 0; i < hits.Length; i++)
         {
-            if (hits[i].collider == null)
+            if (hits[i].collider == null || !hits[i].collider.CompareTag("Monster"))
             {
                 continue;
             }
@@ -66,6 +72,7 @@ public class LanternController : MonoBehaviour
                     StopCoroutine(flickerCoroutine);
                 }
 
+                monster.FollowPlayer(true);
                 monsterDetected = true;
                 flickerCoroutine = StartCoroutine(FlickerLight());
                 onMonsterDetected?.Invoke();
@@ -78,10 +85,16 @@ public class LanternController : MonoBehaviour
 
         if (monsterDetected)
         {
+            monster.FollowPlayer(false);
             onMonsterUndetected?.Invoke();
         }
 
         monsterDetected = false;
+    }
+
+    public void ToggleLight(bool toggle)
+    {
+        lanternLight.enabled = toggle;
     }
 
     private Vector2 CalculateVectorDirection(Vector3 aVector, float angle)
