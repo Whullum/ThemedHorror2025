@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
@@ -14,7 +15,7 @@ public class LanternController : MonoBehaviour
 
     private Light2D lanternLight;
     private Coroutine flickerCoroutine;
-    private RaycastHit2D hit;
+    private RaycastHit2D[] hits = new RaycastHit2D[5];
     private bool monsterDetected;
     private float initialIntensity;
 
@@ -31,10 +32,33 @@ public class LanternController : MonoBehaviour
 
     private void CheckTargets()
     {
-        hit = Physics2D.Raycast(transform.position, transform.up, lanternLight.pointLightOuterRadius, monsterLayer);
+        Vector2 rightVector = CalculateVectorDirection(transform.up, lanternLight.pointLightOuterAngle / 2);
+        Vector2 rightMiddleVector = CalculateVectorDirection(transform.up, lanternLight.pointLightOuterAngle / 4);
+        Vector2 leftVector = CalculateVectorDirection(transform.up, -lanternLight.pointLightOuterAngle / 2);
+        Vector2 leftMiddleVector = CalculateVectorDirection(transform.up, -lanternLight.pointLightOuterAngle / 4);
 
-        if (hit.collider != null)
+        hits[0] = Physics2D.Raycast(transform.position, transform.up, lanternLight.pointLightOuterRadius, monsterLayer);
+        hits[1] = Physics2D.Raycast(transform.position, rightVector, lanternLight.pointLightOuterRadius, monsterLayer);
+        hits[2] = Physics2D.Raycast(transform.position, rightMiddleVector, lanternLight.pointLightOuterRadius, monsterLayer);
+        hits[3] = Physics2D.Raycast(transform.position, leftVector, lanternLight.pointLightOuterRadius, monsterLayer);
+        hits[4] = Physics2D.Raycast(transform.position, leftMiddleVector, lanternLight.pointLightOuterRadius, monsterLayer);
+
+        if (showDebug)
         {
+            Debug.DrawRay(transform.position, transform.up * lanternLight.pointLightOuterRadius, Color.red);
+            Debug.DrawRay(transform.position, rightVector * lanternLight.pointLightOuterRadius, Color.red);
+            Debug.DrawRay(transform.position, rightMiddleVector * lanternLight.pointLightOuterRadius, Color.red);
+            Debug.DrawRay(transform.position, leftVector * lanternLight.pointLightOuterRadius, Color.red);
+            Debug.DrawRay(transform.position, leftMiddleVector * lanternLight.pointLightOuterRadius, Color.red);
+        }
+
+        for (int i = 0; i < hits.Length; i++)
+        {
+            if (hits[i].collider == null)
+            {
+                continue;
+            }
+
             if (!monsterDetected)
             {
                 if (flickerCoroutine != null)
@@ -42,37 +66,40 @@ public class LanternController : MonoBehaviour
                     StopCoroutine(flickerCoroutine);
                 }
 
+                monsterDetected = true;
                 flickerCoroutine = StartCoroutine(FlickerLight());
                 onMonsterDetected?.Invoke();
+
+                return;
             }
 
-            monsterDetected = true;
-        }
-        else
-        {
-            if (monsterDetected)
-            {
-                onMonsterUndetected?.Invoke();
-            }
-
-            monsterDetected = false;
+            return;
         }
 
-        if (showDebug)
+        if (monsterDetected)
         {
-            Debug.DrawRay(transform.position, transform.up * lanternLight.pointLightOuterRadius, Color.red);
+            onMonsterUndetected?.Invoke();
         }
+
+        monsterDetected = false;
+    }
+
+    private Vector2 CalculateVectorDirection(Vector3 aVector, float angle)
+    {
+        float radians = angle * Mathf.PI / 180;
+        double Bx = aVector.x * Math.Cos(radians) - aVector.y * Math.Sin(radians);
+        double By = aVector.x * Math.Sin(radians) + aVector.y * Math.Cos(radians);
+
+        return new Vector2((float)Bx, (float)By);
     }
 
     private IEnumerator FlickerLight()
     {
-        yield return null;
-
         float rndIntesity = 0.0f;
 
         while (monsterDetected)
         {
-            rndIntesity = Random.Range(0.0f, 1.0f);
+            rndIntesity = UnityEngine.Random.Range(0.0f, 1.0f);
 
             lanternLight.intensity = rndIntesity;
 
