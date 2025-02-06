@@ -8,8 +8,8 @@ using UnityEngine.Rendering.Universal;
 public class LanternController : MonoBehaviour
 {
     [Tooltip("Layer of the monster. Used to detect it using raycast.")]
-    [SerializeField] private MonsterAI monster;
-    [SerializeField] private LayerMask monsterLayer;
+    [SerializeField] private MothAI monster;
+    [SerializeField] private LayerMask collisionLayers;
     [SerializeField] private UnityEvent onMonsterDetected;
     [SerializeField] private UnityEvent onMonsterUndetected;
     [SerializeField] private bool showDebug;
@@ -43,19 +43,19 @@ public class LanternController : MonoBehaviour
         Vector2 leftVector = CalculateVectorDirection(transform.up, -lanternLight.pointLightOuterAngle / 2);
         Vector2 leftMiddleVector = CalculateVectorDirection(transform.up, -lanternLight.pointLightOuterAngle / 4);
 
-        hits[0] = Physics2D.Raycast(transform.position, transform.up, lanternLight.pointLightOuterRadius, monsterLayer);
-        hits[1] = Physics2D.Raycast(transform.position, rightVector, lanternLight.pointLightOuterRadius, monsterLayer);
-        hits[2] = Physics2D.Raycast(transform.position, rightMiddleVector, lanternLight.pointLightOuterRadius, monsterLayer);
-        hits[3] = Physics2D.Raycast(transform.position, leftVector, lanternLight.pointLightOuterRadius, monsterLayer);
-        hits[4] = Physics2D.Raycast(transform.position, leftMiddleVector, lanternLight.pointLightOuterRadius, monsterLayer);
+        hits[0] = Physics2D.Raycast(transform.position, transform.up, lanternLight.pointLightOuterRadius, collisionLayers);
+        hits[1] = Physics2D.Raycast(transform.position, rightVector, lanternLight.pointLightOuterRadius, collisionLayers);
+        hits[2] = Physics2D.Raycast(transform.position, rightMiddleVector, lanternLight.pointLightOuterRadius, collisionLayers);
+        hits[3] = Physics2D.Raycast(transform.position, leftVector, lanternLight.pointLightOuterRadius, collisionLayers);
+        hits[4] = Physics2D.Raycast(transform.position, leftMiddleVector, lanternLight.pointLightOuterRadius, collisionLayers);
 
         if (showDebug)
         {
-            Debug.DrawRay(transform.position, transform.up * lanternLight.pointLightOuterRadius, Color.red);
-            Debug.DrawRay(transform.position, rightVector * lanternLight.pointLightOuterRadius, Color.red);
-            Debug.DrawRay(transform.position, rightMiddleVector * lanternLight.pointLightOuterRadius, Color.red);
-            Debug.DrawRay(transform.position, leftVector * lanternLight.pointLightOuterRadius, Color.red);
-            Debug.DrawRay(transform.position, leftMiddleVector * lanternLight.pointLightOuterRadius, Color.red);
+            Debug.DrawRay(transform.position, transform.up * hits[0].distance, Color.red);
+            Debug.DrawRay(transform.position, rightVector * hits[1].distance, Color.red);
+            Debug.DrawRay(transform.position, rightMiddleVector * hits[2].distance, Color.red);
+            Debug.DrawRay(transform.position, leftVector * hits[3].distance, Color.red);
+            Debug.DrawRay(transform.position, leftMiddleVector * hits[4].distance, Color.red);
         }
 
         for (int i = 0; i < hits.Length; i++)
@@ -72,7 +72,7 @@ public class LanternController : MonoBehaviour
                     StopCoroutine(flickerCoroutine);
                 }
 
-                monster.FollowPlayer(true);
+                monster.DetectPlayer();
                 monsterDetected = true;
                 flickerCoroutine = StartCoroutine(FlickerLight());
                 onMonsterDetected?.Invoke();
@@ -85,7 +85,6 @@ public class LanternController : MonoBehaviour
 
         if (monsterDetected)
         {
-            monster.FollowPlayer(false);
             onMonsterUndetected?.Invoke();
         }
 
