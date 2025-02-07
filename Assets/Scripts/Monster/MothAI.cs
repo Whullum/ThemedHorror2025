@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Events;
 
 [RequireComponent(typeof(NavMeshAgent))]
 public class MothAI : MonoBehaviour
@@ -14,16 +15,33 @@ public class MothAI : MonoBehaviour
     }
 
     [SerializeField] private Transform player;
-    [SerializeField] private float patrolTime;
+
+    [Header("IDLE STATE")]
+    [Tooltip("Time until the monster starts moving again to a new point.")]
+    [SerializeField] private float idleTime;
+    [Header("WALK STATE")]
     [SerializeField] private float walkSpeed;
-    [SerializeField] private float chaseSpeed;
+    [Header("CHASE STATE")]
+    [Tooltip("Time until the monster losses interest in the player once it was detected " +
+        "(only if no direct line of sight towards the player).")]
     [SerializeField] private float chaseTime;
-    [SerializeField] private float attackSpeed;
-    [SerializeField] private float attackDistance;
+    [SerializeField] private float chaseSpeed;
+    [Tooltip("Distance at which the player will be detected independently if the light is pointed towards the monster.")]
     [SerializeField] private float detectionRadius;
-    [SerializeField] private float noiseDetectionRadius;
-    [SerializeField] private LayerMask playerLayer;
+    [Header("ATTACK STATE")]
+    [Tooltip("Time between attacks.")]
+    [SerializeField] private float attackSpeed;
+    [Tooltip("Minimum distance between the player and the monster for the monster to be able to hit the player.")]
+    [SerializeField] private float attackDistance;
+    [Header("Other Settings")]
+    [SerializeField] private LayerMask visibleLayers;
     [SerializeField] private bool showDebug;
+    [Header("Events")]
+    [SerializeField] private UnityEvent OnEnterIDLEState;
+    [SerializeField] private UnityEvent OnEnterWalkState;
+    [SerializeField] private UnityEvent OnEnterChaseState;
+    [SerializeField] private UnityEvent OnEnterAttackState;
+    [SerializeField] private UnityEvent OnHitPlayer;
 
     private NavMeshAgent agent;
     private Transform target;
@@ -32,6 +50,7 @@ public class MothAI : MonoBehaviour
     private MothState previousState;
     private Vector3Int tileSize;
     private bool followPlayer;
+    private bool playerHit;
     private float stateTime;
 
     private void Start()
@@ -89,9 +108,10 @@ public class MothAI : MonoBehaviour
             agent.isStopped = true;
             stateTime = 0.0f;
             previousState = MothState.IDLE;
+            OnEnterIDLEState?.Invoke();
         }
 
-        if (stateTime >= patrolTime)
+        if (stateTime >= idleTime)
         {
             Vector3 randomPosition = Random.insideUnitCircle * tileSize.x;
             NavMesh.SamplePosition(randomPosition, out NavMeshHit hit, 100, 1);
@@ -113,11 +133,16 @@ public class MothAI : MonoBehaviour
             agent.isStopped = false;
             stateTime = 0.0f;
             previousState = MothState.WALK;
+            OnEnterWalkState?.Invoke();
         }
 
         if (agent.remainingDistance < 1.0f)
         {
             currentState = MothState.IDLE;
+        }
+        else if (Vector2.Distance(transform.position, player.position) <= detectionRadius)
+        {
+            currentState = MothState.CHASE;
         }
     }
 
@@ -129,18 +154,12 @@ public class MothAI : MonoBehaviour
             agent.isStopped = false;
             stateTime = 0.0f;
             previousState = MothState.CHASE;
+            OnEnterChaseState?.Invoke();
         }
 
         agent.SetDestination(player.position);
 
-        // raycast towards player to see if moth has line of sight, if not then proceed
-        // to changue state once the chase time finished
-
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, player.position - transform.position, detectionRadius, playerLayer);
-        Debug.Log("inside");
-
-        if (hit.collider != null)
-            Debug.Log(hit.collider.name);
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, player.position - transform.position, detectionRadius, visibleLayers);
 
         if (showDebug)
         {
@@ -149,8 +168,11 @@ public class MothAI : MonoBehaviour
 
         if (stateTime >= chaseTime && hit.collider != null && !hit.collider.CompareTag("Player"))
         {
-            Debug.Log("GOING IDLE");
             currentState = MothState.IDLE;
+        }
+        else if (Vector2.Distance(transform.position, player.position) <= attackDistance)
+        {
+            currentState = MothState.ATTACK;
         }
     }
 
@@ -158,7 +180,43 @@ public class MothAI : MonoBehaviour
     {
         if (previousState != MothState.ATTACK)
         {
+            agent.isStopped = true;
             previousState = MothState.ATTACK;
+            OnEnterAttackState?.Invoke();
+        }
+
+        if (playerHit)
+        {
+            if (stateTime >= attackSpeed)
+            {
+                playerHit = false;
+                currentState = MothState.CHASE;
+            }
+        }
+        else
+        {
+            RaycastHit2D[] hits = Physics2D.CircleCastAll(transform.position, attackDistance, transform.right, visibleLayers);
+
+            for (int i = 0; i < hits.Length; i++)
+            {
+                if (hits[i].collider != null)
+                {
+                    if (hits[i].collider.TryGetComponent(out PlayerController controller))
+                    {
+                        controller.TakeHit();
+                        playerHit = true;
+                        OnHitPlayer?.Invoke();
+                    }
+                }
+            }
+        }
+    }
+
+    private void OnDrawGizmos()
+    {
+        if (showDebug)
+        {
+            Gizmos.DrawWireSphere(transform.position, detectionRadius);
         }
     }
 }

@@ -280,7 +280,7 @@ MonoBehaviour:
   m_ComponentVersion: 2
   m_LightType: 3
   m_BlendStyleIndex: 0
-  m_FalloffIntensity: 0.5
+  m_FalloffIntensity: 0.6
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_LightVolumeIntensity: 1
@@ -304,9 +304,9 @@ MonoBehaviour:
     m_Center: {x: 0, y: -0.00000011920929, z: 0}
     m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
   m_PointLightInnerAngle: 30
-  m_PointLightOuterAngle: 130
+  m_PointLightOuterAngle: 100
   m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 12
+  m_PointLightOuterRadius: 13
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
@@ -532,6 +532,7 @@ GameObject:
   - component: {fileID: 5402861721205816287}
   - component: {fileID: 7327059116917656422}
   - component: {fileID: 5195093862234860407}
+  - component: {fileID: 5509345206457607707}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -733,3 +734,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offset: -90
+--- !u!114 &5509345206457607707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8215891024696667928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12f80707f645a9e408c0135af8334b10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lives: 2
+  OnPlayerHit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnPlayerDeath:
+    m_PersistentCalls:
+      m_Calls: []
