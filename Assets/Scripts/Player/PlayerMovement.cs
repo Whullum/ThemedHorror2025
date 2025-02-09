@@ -6,14 +6,18 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float walkSpeed = 10.0f;
     [SerializeField] private float runSpeed = 20.0f;
+    [SerializeField] private float runningMakesNoiseTime = 2.0f;
     [SerializeField] private UnityEvent OnStartRunning;
     [SerializeField] private UnityEvent OnStopRunning;
+    [SerializeField] private UnityEvent OnMakingNoise;
 
     private Rigidbody2D body;
     private Vector2 movementVector;
+    private bool running;
     private float horizontalAxisInput;
     private float verticalAxisInput;
     private float currentSpeed;
+    private float runTime;
 
     private void Awake()
     {
@@ -30,11 +34,24 @@ public class PlayerMovement : MonoBehaviour
         {
             currentSpeed = runSpeed;
             OnStartRunning?.Invoke();
+            running = true;
+            runTime = 0.0f;
         }
         else if (!Input.GetKey(KeyCode.LeftShift) && currentSpeed != walkSpeed)
         {
             currentSpeed = walkSpeed;
             OnStopRunning?.Invoke();
+            running = false;
+        }
+
+        if (running)
+        {
+            if (runTime >= runningMakesNoiseTime)
+            {
+                OnMakingNoise?.Invoke();
+            }
+
+            runTime += Time.deltaTime;
         }
     }
 

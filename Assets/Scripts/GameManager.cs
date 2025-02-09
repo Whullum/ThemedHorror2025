@@ -1,11 +1,16 @@
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.Tilemaps;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
+    public Tilemap MainTilemap { get { return tilemap; } }
 
-    public Tilemap MainTilemap;
+    [SerializeField] private Tilemap tilemap;
+    [SerializeField] private UnityEvent OnPlayerDeath;
+    [SerializeField] private UnityEvent OnPlayerHit;
+
 
     private void Awake()
     {
@@ -21,5 +26,15 @@ public class GameManager : MonoBehaviour
     public void SetMothTarget(Transform target)
     {
 
+    }
+
+    public void PlayerHit()
+    {
+        OnPlayerHit?.Invoke();
+    }
+
+    public void PlayerDeath()
+    {
+        OnPlayerDeath?.Invoke();
     }
 }

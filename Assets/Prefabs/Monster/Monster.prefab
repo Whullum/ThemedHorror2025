@@ -98,6 +98,7 @@ GameObject:
   - component: {fileID: 298689206592760089}
   - component: {fileID: 226319627484365343}
   - component: {fileID: 4265062752128822410}
+  - component: {fileID: 2525698969311935155}
   m_Layer: 6
   m_Name: Monster
   m_TagString: Monster
@@ -120,7 +121,6 @@ Transform:
   m_Children:
   - {fileID: 3906865676404001623}
   - {fileID: 3531117341653361738}
-  - {fileID: 3857248617335057127}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2813706882781674784
@@ -302,45 +302,13 @@ MonoBehaviour:
   OnHitPlayer:
     m_PersistentCalls:
       m_Calls: []
---- !u!1 &6534317840621668565
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3857248617335057127}
-  - component: {fileID: 4394864699652672367}
-  m_Layer: 6
-  m_Name: NoiseDetector
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3857248617335057127
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6534317840621668565}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8994986475613958129}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4394864699652672367
+--- !u!114 &2525698969311935155
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6534317840621668565}
+  m_GameObject: {fileID: 6324980515208701599}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd0a019d9386c0b4cbbd045bd81474c5, type: 3}

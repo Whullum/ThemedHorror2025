@@ -12,10 +12,12 @@ public class PlayerController : MonoBehaviour
         lives--;
 
         OnPlayerHit?.Invoke();
+        GameManager.Instance.PlayerHit();
 
         if (lives <= 0)
         {
             OnPlayerDeath?.Invoke();
+            GameManager.Instance.PlayerDeath();
         }
     }
 }

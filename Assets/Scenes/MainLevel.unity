@@ -119,11 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1839735485 &69681013 stripped
-Tilemap:
-  m_CorrespondingSourceObject: {fileID: 2393933229080319649, guid: 1700afaba8f26cd4ab5284c2fb3363ff, type: 3}
-  m_PrefabInstance: {fileID: 1974568618848291108}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &207674762 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4265062752128822410, guid: 43c75967dd345204699b5a131ff6e7bd, type: 3}
@@ -164,7 +159,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ebc6a7fea9864e4f91083684deb6d1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainTilemap: {fileID: 69681013}
+  tilemap: {fileID: 1974568618848291109}
+  OnPlayerDeath:
+    m_PersistentCalls:
+      m_Calls: []
+  OnPlayerHit:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &692122776
 Transform:
   m_ObjectHideFlags: 0
@@ -483,7 +484,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!43 &1990005253
+--- !u!43 &1815797013
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3745,6 +3746,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1700afaba8f26cd4ab5284c2fb3363ff, type: 3}
+--- !u!1839735485 &1974568618848291109 stripped
+Tilemap:
+  m_CorrespondingSourceObject: {fileID: 5160175372300674584, guid: 1700afaba8f26cd4ab5284c2fb3363ff, type: 3}
+  m_PrefabInstance: {fileID: 1974568618848291108}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2455939801822395210
 PrefabInstance:
   m_ObjectHideFlags: 0
