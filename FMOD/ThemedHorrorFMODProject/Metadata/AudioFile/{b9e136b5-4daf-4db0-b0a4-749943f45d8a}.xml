@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{b9e136b5-4daf-4db0-b0a4-749943f45d8a}">
+		<property name="assetPath">
+			<value>stay-in-the-dark-atmospheric-music.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>219.57979166666667</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{3a77015b-8640-4d55-97bf-7e1a0d1a9be1}</destination>
+		</relationship>
+	</object>
+</objects>
