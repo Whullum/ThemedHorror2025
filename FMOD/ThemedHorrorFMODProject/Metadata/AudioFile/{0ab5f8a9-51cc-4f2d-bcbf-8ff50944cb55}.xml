@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{0ab5f8a9-51cc-4f2d-bcbf-8ff50944cb55}">
+		<property name="assetPath">
+			<value>stay-in-the-dark-moth-layer-2-14-25.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>57.816312500000002</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{3a77015b-8640-4d55-97bf-7e1a0d1a9be1}</destination>
+		</relationship>
+	</object>
+</objects>
