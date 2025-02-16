@@ -285,7 +285,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 00000000cdb05482891028476b3775bf09ebc493
+  m_ApplyToSortingLayers: 00000000cdb05482891028476b3775bf09ebc493ed54556a
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -531,7 +531,6 @@ GameObject:
   - component: {fileID: 6000240386307702638}
   - component: {fileID: 5402861721205816287}
   - component: {fileID: 7327059116917656422}
-  - component: {fileID: 5195093862234860407}
   - component: {fileID: 5509345206457607707}
   - component: {fileID: 799732701441943818}
   m_Layer: 0
@@ -677,7 +676,7 @@ Rigidbody2D:
   m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &7327059116917656422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -726,19 +725,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
---- !u!114 &5195093862234860407
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8215891024696667928}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c455b658e3e0bd148b1e493550bfafc8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  offset: -90
 --- !u!114 &5509345206457607707
 MonoBehaviour:
   m_ObjectHideFlags: 0
