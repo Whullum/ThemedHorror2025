@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 using UnityEngine.Tilemaps;
 
 public class GameManager : MonoBehaviour
@@ -36,5 +37,11 @@ public class GameManager : MonoBehaviour
     public void PlayerDeath()
     {
         OnPlayerDeath?.Invoke();
+        ResetLevel();
+    }
+
+    public void ResetLevel()
+    {
+        //SceneManager.LoadScene();
     }
 }
