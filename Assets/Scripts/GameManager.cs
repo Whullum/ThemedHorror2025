@@ -1,13 +1,16 @@
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.SceneManagement;
 using UnityEngine.Tilemaps;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
+    public GameObject Player { get { return player; } }
+    public GameObject Monster { get { return monster; } }
     public Tilemap MainTilemap { get { return tilemap; } }
 
+    [SerializeField] private GameObject player;
+    [SerializeField] private GameObject monster;
     [SerializeField] private Tilemap tilemap;
     [SerializeField] private UnityEvent OnPlayerDeath;
     [SerializeField] private UnityEvent OnPlayerHit;
