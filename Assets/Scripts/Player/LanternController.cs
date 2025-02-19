@@ -8,12 +8,12 @@ using UnityEngine.Rendering.Universal;
 public class LanternController : MonoBehaviour
 {
     [Tooltip("Layer of the monster. Used to detect it using raycast.")]
-    [SerializeField] private MothAI monster;
     [SerializeField] private LayerMask collisionLayers;
     [SerializeField] private UnityEvent onMonsterDetected;
     [SerializeField] private UnityEvent onMonsterUndetected;
     [SerializeField] private bool showDebug;
 
+    private MothAI monster;
     private Light2D lanternLight;
     private Coroutine flickerCoroutine;
     private RaycastHit2D[] hits = new RaycastHit2D[5];
@@ -24,6 +24,11 @@ public class LanternController : MonoBehaviour
     {
         lanternLight = GetComponent<Light2D>();
         initialIntensity = lanternLight.intensity;
+    }
+
+    private void Start()
+    {
+        monster = GameManager.Instance.Monster.GetComponent<MothAI>();
     }
 
     private void Update()

@@ -14,7 +14,7 @@ TagManager:
   - UI
   - Monster
   - Structure
-  - 
+  - Decor
   - 
   - 
   - 
@@ -53,6 +53,9 @@ TagManager:
     locked: 0
   - name: Monster
     uniqueID: 1193808009
+    locked: 0
+  - name: Decor
+    uniqueID: 1783977197
     locked: 0
   - name: Player
     uniqueID: 2186588365

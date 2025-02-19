@@ -19,9 +19,15 @@ public class PlayerMovement : MonoBehaviour
     private float currentSpeed;
     private float runTime;
 
+    // Player Animation -Will
+    private Animator playerAnimator;
+    private const string horizontalAnim = "Horizontal";
+    private const string verticalAnim = "Vertical";
+
     private void Awake()
     {
         body = GetComponent<Rigidbody2D>();
+        playerAnimator = GetComponent<Animator>();
         currentSpeed = walkSpeed;
     }
 
@@ -53,6 +59,9 @@ public class PlayerMovement : MonoBehaviour
 
             runTime += Time.deltaTime;
         }
+
+        playerAnimator.SetFloat(horizontalAnim, movementVector.x);
+        playerAnimator.SetFloat(verticalAnim, movementVector.y);
     }
 
     private void FixedUpdate()
