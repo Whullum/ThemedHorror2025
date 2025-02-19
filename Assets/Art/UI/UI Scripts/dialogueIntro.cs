@@ -10,12 +10,14 @@ public class dialogueIntro : MonoBehaviour
     public string[] lines;
     public float textSpeed;
     private int index;
+    public GameObject arrow;
 
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        arrow.SetActive(false);
         textComponent.text=string.Empty;
         StartDialogue();
     }
@@ -53,10 +55,12 @@ public class dialogueIntro : MonoBehaviour
             yield return new WaitForSeconds(textSpeed);
 
         }
+        arrow.SetActive(true);
     }
 
     void NextLine()
     {
+        arrow.SetActive(false);
         if (index<lines.Length-1)
         {
             index++;
