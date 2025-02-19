@@ -14,8 +14,6 @@ public class MothAI : MonoBehaviour
         ATTACK
     }
 
-    [SerializeField] private Transform player;
-
     [Header("IDLE STATE")]
     [Tooltip("Time until the monster starts moving again to a new point.")]
     [SerializeField] private float idleTime;
@@ -43,6 +41,7 @@ public class MothAI : MonoBehaviour
     [SerializeField] private UnityEvent OnEnterAttackState;
     [SerializeField] private UnityEvent OnHitPlayer;
 
+    private Transform player;
     private NavMeshAgent agent;
     private Transform target;
     private NavMeshPath path;
@@ -62,6 +61,7 @@ public class MothAI : MonoBehaviour
         currentState = MothState.IDLE;
         previousState = MothState.IDLE;
         path = new NavMeshPath();
+        player = GameManager.Instance.Player.transform;
 
         GameManager.Instance.MainTilemap.CompressBounds();
         tileSize = GameManager.Instance.MainTilemap.size;

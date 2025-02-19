@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 2389128562766139442}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.04, z: 0}
+  m_LocalPosition: {x: -0.923, y: -0.919, z: 0}
   m_LocalScale: {x: 2, y: 0.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -163,9 +163,9 @@ MonoBehaviour:
   - {x: 0.5, y: -0.50000024, z: 0}
   m_ShapePathHash: 0
   m_InstanceId: 0
-  m_ShadowShape2DComponent: {fileID: 3263289161758193256}
+  m_ShadowShape2DComponent: {fileID: 5682880697284545541}
   m_ShadowShape2DProvider:
-    rid: 2090229157183356928
+    rid: 8302958082668888136
   m_ShadowCastingSource: 2
   m_ShadowMesh:
     m_Mesh: {fileID: 0}
@@ -176,7 +176,7 @@ MonoBehaviour:
     m_TrimEdge: 0.01
     m_FlipX: 0
     m_FlipY: 0
-    m_InitialTrim: 0.01
+    m_InitialTrim: 0
   m_CastingOption: 1
   m_PreviousTrimEdge: 0.01
   m_PreviousEdgeProcessing: 1
@@ -185,8 +185,8 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 2090229157183356928
-      type: {class: ShadowShape2DProvider_SpriteRenderer, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
+    - rid: 8302958082668888136
+      type: {class: ShadowShape2DProvider_Collider2D, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
       data: 
 --- !u!1 &3833033052700616118
 GameObject:
@@ -401,9 +401,9 @@ MonoBehaviour:
   - {x: 0.5, y: -0.50000024, z: 0}
   m_ShapePathHash: 0
   m_InstanceId: 0
-  m_ShadowShape2DComponent: {fileID: 7836901620424907576}
+  m_ShadowShape2DComponent: {fileID: 3791144314846692377}
   m_ShadowShape2DProvider:
-    rid: 2090229157183356928
+    rid: 8302958082668888137
   m_ShadowCastingSource: 2
   m_ShadowMesh:
     m_Mesh: {fileID: 0}
@@ -423,8 +423,8 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 2090229157183356928
-      type: {class: ShadowShape2DProvider_SpriteRenderer, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
+    - rid: 8302958082668888137
+      type: {class: ShadowShape2DProvider_Collider2D, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
       data: 
 --- !u!208 &5123589446607518850
 NavMeshObstacle:
