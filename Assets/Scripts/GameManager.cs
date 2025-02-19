@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 using UnityEngine.Tilemaps;
 
 public class GameManager : MonoBehaviour
@@ -40,12 +41,12 @@ public class GameManager : MonoBehaviour
     public void PlayerDeath()
     {
         OnPlayerDeath?.Invoke();
-        ResetLevel();
+        UIManager.Instance.ToggleGameOverScreen(true);
     }
 
     public void ResetLevel()
     {
-        //SceneManager.LoadScene();
+        SceneManager.LoadScene("BuildLevel");
     }
 
     public void PauseGame()
