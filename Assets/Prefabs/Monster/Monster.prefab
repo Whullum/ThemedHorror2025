@@ -212,7 +212,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.21133333}
+  m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
 --- !u!50 &298689206592760089
 Rigidbody2D:
@@ -275,7 +275,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 710468164587d5e469f7909b861b85e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
   idleTime: 8
   walkSpeed: 3
   chaseTime: 3
