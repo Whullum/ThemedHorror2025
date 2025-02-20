@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 770cd0dd4a85e4442b7cbf555cad1269
+guid: 23bc37443e916dc40904c60a35ebec8f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 9216154689741782278
-    second: arrow256_0
+      213: 4859602619981056978
+    second: vignette6_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -76,8 +76,8 @@ TextureImporter:
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
+    compressionQuality: 20
+    crunchedCompression: 1
     allowsAlphaSplitting: 0
     overridden: 0
     ignorePlatformSupport: 0
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: arrow256_0
+      name: vignette6_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 43
-        width: 246
-        height: 170
+        x: 0
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 60dfb1d6cdb56ef70800000000000000
-      internalID: 9216154689741782278
+      spriteID: 2db4789e5d6c07340800000000000000
+      internalID: 4859602619981056978
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      arrow256_0: 9216154689741782278
+      vignette6_0: 4859602619981056978
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
