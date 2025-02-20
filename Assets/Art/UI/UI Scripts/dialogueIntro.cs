@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using System.Runtime.InteropServices;
+using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class dialogueIntro : MonoBehaviour
 {
     public TextMeshProUGUI textComponent;
     public string[] lines;
     public float textSpeed;
+    public string mainSceneName;
     private int index;
     public GameObject arrow;
 
@@ -70,6 +73,7 @@ public class dialogueIntro : MonoBehaviour
         else
         {
             gameObject.SetActive(false);
+            SceneManager.LoadScene(mainSceneName);
         }
     }
 }
