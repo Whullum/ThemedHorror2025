@@ -41,8 +41,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _BreathFrequency: 1
-    - _BreathIntensity: 0.5
+    - _BreathFrequency: 20
+    - _BreathIntensity: 1
     - _Fullscreen_AlphaBlendOperation: 0
     - _Fullscreen_BlendMode: 1
     - _Fullscreen_ColorBlendOperation: 0
@@ -51,10 +51,10 @@ Material:
     - _Fullscreen_DstColorBlend: 10
     - _Fullscreen_SrcAlphaBlend: 1
     - _Fullscreen_SrcColorBlend: 5
-    - _VignetteIntensity: 4
-    - _VignettePower: 3
-    - _VoronoiScale: 20
-    - _VoronoiSpeed: 1
+    - _VignetteIntensity: 5
+    - _VignettePower: 50
+    - _VoronoiScale: 5
+    - _VoronoiSpeed: 5
     m_Colors:
     - _Color: {r: 0.3515327, g: 0.025186857, b: 0.086500466, a: 1}
   m_BuildTextureStacks: []
