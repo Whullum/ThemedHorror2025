@@ -779,7 +779,7 @@ MonoBehaviour:
   - Inside, you huddled deeper into your threadbare coat, the chill seeping into
     your bones despite the stifling humidity.
   textSpeed: 0.02
-  arrow: {fileID: 4669352354145187497}
+  mainSceneName: BuildLevel
 --- !u!1 &8463370378060318159
 GameObject:
   m_ObjectHideFlags: 0
