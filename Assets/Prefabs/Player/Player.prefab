@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 982877284289710358}
   - component: {fileID: 3230363630654616280}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: LeftHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8682216269207380299}
   - component: {fileID: 5212460468373287907}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -187,7 +187,7 @@ GameObject:
   - component: {fileID: 119901813104602369}
   - component: {fileID: 6643200329911862899}
   - component: {fileID: 1955329089045730424}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Lantern
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -285,7 +285,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 00000000891028476b3775bf09ebc493ed54556a
+  m_ApplyToSortingLayers: 00000000cdb05482891028476b3775bf09ebc493ed54556a
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -303,7 +303,7 @@ MonoBehaviour:
   m_LocalBounds:
     m_Center: {x: 0, y: -0.00000011920929, z: 0}
     m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
-  m_PointLightInnerAngle: 60
+  m_PointLightInnerAngle: 30
   m_PointLightOuterAngle: 100
   m_PointLightInnerRadius: 0
   m_PointLightOuterRadius: 20
@@ -329,6 +329,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e16c513272aa9841bdd530170715564, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  monster: {fileID: 0}
   collisionLayers:
     serializedVersion: 2
     m_Bits: 192
@@ -363,7 +364,7 @@ GameObject:
   - component: {fileID: 7598172786861926530}
   - component: {fileID: 3917952481960413054}
   - component: {fileID: 7764323991036247720}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: NoiseEmitter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -443,7 +444,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6994049200832656220}
   - component: {fileID: 3661894022043639616}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: SelfLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -506,7 +507,7 @@ MonoBehaviour:
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 8
+  m_PointLightOuterRadius: 5
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
@@ -527,12 +528,12 @@ GameObject:
   m_Component:
   - component: {fileID: 2223059656801364778}
   - component: {fileID: 1250998871713839172}
+  - component: {fileID: 6000240386307702638}
   - component: {fileID: 5402861721205816287}
-  - component: {fileID: 8995367967961914770}
   - component: {fileID: 7327059116917656422}
   - component: {fileID: 5509345206457607707}
   - component: {fileID: 799732701441943818}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -602,7 +603,7 @@ SpriteRenderer:
   m_SortingLayerID: -2108378931
   m_SortingLayer: 6
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1640111900957294418, guid: 365b0be73bc453547a6a154fc3fbad38, type: 3}
+  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -613,35 +614,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &5402861721205816287
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8215891024696667928}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 1
-  m_SleepingMode: 1
-  m_CollisionDetection: 1
-  m_Constraints: 4
---- !u!70 &8995367967961914770
-CapsuleCollider2D:
+--- !u!58 &6000240386307702638
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -674,9 +648,35 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.08}
-  m_Size: {x: 0.57, y: 1.8}
-  m_Direction: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 0.5
+--- !u!50 &5402861721205816287
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8215891024696667928}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 1
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!114 &7327059116917656422
 MonoBehaviour:
   m_ObjectHideFlags: 0

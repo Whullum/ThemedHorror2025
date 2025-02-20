@@ -8,7 +8,6 @@ public class Interaction : MonoBehaviour
     [SerializeField] private UnityEvent OnInteractionExecuted;
     [SerializeField] private UnityEvent OnEnterInteraction;
     [SerializeField] private UnityEvent OnExitInteraction;
-    [SerializeField] private UnityEvent OnMonsterEnter;
 
     private bool canInteract;
 
@@ -27,27 +26,23 @@ public class Interaction : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (!collision.CompareTag("Player"))
         {
-            OnEnterInteraction?.Invoke();
-            canInteract = true;
+            return;
         }
-        else if (collision.CompareTag("Monster"))
-        {
-            OnMonsterEnter?.Invoke();
-        }
+
+        OnEnterInteraction?.Invoke();
+        canInteract = true;
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (!collision.CompareTag("Player"))
         {
-            OnExitInteraction?.Invoke();
-            canInteract = false;
+            return;
         }
-        else if (collision.CompareTag("Monster"))
-        {
-            OnMonsterEnter?.Invoke();
-        }
+
+        OnExitInteraction?.Invoke();
+        canInteract = false;
     }
 }
