@@ -91,6 +91,7 @@
 		</relationship>
 	</object>
 	<object class="EventSound" id="{0d4d7aa7-0b3c-43e9-9490-b9048cfd9be4}">
+		<property name="name" />
 		<relationship name="modulators">
 			<destination>{608f1643-7309-49a1-abc9-708da2840336}</destination>
 		</relationship>
