@@ -52,7 +52,7 @@ Material:
     - _Fullscreen_SrcAlphaBlend: 1
     - _Fullscreen_SrcColorBlend: 5
     - _VignetteIntensity: 20
-    - _VignettePower: 5
+    - _VignettePower: 50
     - _VoronoiScale: 20
     - _VoronoiSpeed: 20
     m_Colors:
