@@ -31,6 +31,15 @@ public class FloorManager : MonoBehaviour
                 currentFloor = floorNumber;
                 GameManager.Instance.Player.transform.position = floors[i].PlayerSpawnPoint.position;
                 GameManager.Instance.Monster.transform.position = floors[i].MonsterSpawnPoint.position;
+
+                if (floors[i].MonsterActive)
+                {
+                    GameManager.Instance.Monster.SetActive(true);
+                }
+                else
+                {
+                    GameManager.Instance.Monster.SetActive(false);
+                }
             }
             else
             {
