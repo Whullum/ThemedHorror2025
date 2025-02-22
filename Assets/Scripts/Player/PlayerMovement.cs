@@ -7,6 +7,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float walkSpeed = 10.0f;
     [SerializeField] private float runSpeed = 20.0f;
     [SerializeField] private float runningMakesNoiseTime = 2.0f;
+    [SerializeField] private Transform lantern;
+    [SerializeField] private Transform[] lanternPositions; // Positions depending on player movement direction, in order: top, bottom, left, right.
     [SerializeField] private UnityEvent OnStartRunning;
     [SerializeField] private UnityEvent OnStopRunning;
     [SerializeField] private UnityEvent OnMakingNoise;
@@ -62,6 +64,24 @@ public class PlayerMovement : MonoBehaviour
 
         playerAnimator.SetFloat(horizontalAnim, movementVector.x);
         playerAnimator.SetFloat(verticalAnim, movementVector.y);
+
+
+        if (movementVector.y > 0.0f)
+        {
+            lantern.position = lanternPositions[0].position;
+        }
+        else if (movementVector.y < 0.0f)
+        {
+            lantern.position = lanternPositions[1].position;
+        }
+        else if (movementVector.x > 0.0f)
+        {
+            lantern.position = lanternPositions[3].position;
+        }
+        else if (movementVector.x < 0.0f)
+        {
+            lantern.position = lanternPositions[2].position;
+        }
     }
 
     private void FixedUpdate()
