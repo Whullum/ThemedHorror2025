@@ -674,8 +674,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 389e5d757d1bce749bb225d9744c08e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 100
-  runSpeed: 300
+  walkSpeed: 200
+  runSpeed: 400
   runningMakesNoiseTime: 2
   lantern: {fileID: 418498749133685486}
   lanternPositions:
@@ -729,6 +729,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lives: 2
+  livesRestoreTime: 10
+  hitShader: {fileID: 2100000, guid: e1576552c0df92d4286ff9ae7a4f0ca7, type: 2}
+  shaderIntensity: 2.5
   OnPlayerHit:
     m_PersistentCalls:
       m_Calls: []
