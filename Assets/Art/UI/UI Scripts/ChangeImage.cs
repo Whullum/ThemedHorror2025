@@ -7,23 +7,19 @@ public class ChangeImage : MonoBehaviour
 {
     public Image oldImage;
     public Sprite[] newImage;
-    int imageIndex;
+    public int imageIndex;
+    [SerializeField] private CombinationPuzzle.Combination[] keyOrder;
+    public CombinationPuzzle puzzleManager;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public CombinationPuzzle.Combination GetCurrentKey()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        return keyOrder[imageIndex];
     }
 
     public void ImageChange()
     {
         oldImage.sprite = newImage[imageIndex];
+        puzzleManager.CheckCombination();
     }
 
     public void ArrowUp()

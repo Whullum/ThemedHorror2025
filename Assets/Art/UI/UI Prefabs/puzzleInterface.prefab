@@ -94,6 +94,8 @@ MonoBehaviour:
   - {fileID: 3885419201670900157, guid: 319a9e8c3491139488a894d57428901e, type: 3}
   - {fileID: -3113779923523832521, guid: c10d585950c5ac04d83ea592b5c70ce4, type: 3}
   - {fileID: -3716087292687044672, guid: 4e5feb73870288f499c15acb2d66eb9a, type: 3}
+  imageIndex: 2
+  keyOrder: 00000000020000000300000001000000
 --- !u!1 &511681412183393884
 GameObject:
   m_ObjectHideFlags: 0
@@ -104,6 +106,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2012049728456918236}
   - component: {fileID: 2167586212113927124}
+  - component: {fileID: 1307120727303310428}
+  - component: {fileID: 1396370307998297428}
+  - component: {fileID: 8569913921391467619}
   m_Layer: 5
   m_Name: puzzleInterface
   m_TagString: Untagged
@@ -139,6 +144,69 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 511681412183393884}
   m_CullTransparentMesh: 1
+--- !u!223 &1307120727303310428
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 511681412183393884}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!114 &1396370307998297428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 511681412183393884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 1
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 1920, y: 1080}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0.5
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!114 &8569913921391467619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 511681412183393884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1 &1372347351117024400
 GameObject:
   m_ObjectHideFlags: 0
@@ -233,6 +301,8 @@ MonoBehaviour:
   - {fileID: 3885419201670900157, guid: 319a9e8c3491139488a894d57428901e, type: 3}
   - {fileID: -3113779923523832521, guid: c10d585950c5ac04d83ea592b5c70ce4, type: 3}
   - {fileID: -3716087292687044672, guid: 4e5feb73870288f499c15acb2d66eb9a, type: 3}
+  imageIndex: 0
+  keyOrder: 00000000020000000300000001000000
 --- !u!1 &2068747800379753797
 GameObject:
   m_ObjectHideFlags: 0
@@ -392,6 +462,8 @@ MonoBehaviour:
   - {fileID: 3885419201670900157, guid: 319a9e8c3491139488a894d57428901e, type: 3}
   - {fileID: -3113779923523832521, guid: c10d585950c5ac04d83ea592b5c70ce4, type: 3}
   - {fileID: -3716087292687044672, guid: 4e5feb73870288f499c15acb2d66eb9a, type: 3}
+  imageIndex: 3
+  keyOrder: 00000000020000000300000001000000
 --- !u!1 &5019603771951458379
 GameObject:
   m_ObjectHideFlags: 0
