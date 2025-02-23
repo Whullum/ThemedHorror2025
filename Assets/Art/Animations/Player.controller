@@ -226,8 +226,8 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: Vertical
     m_Mirror: 0
-  m_BlendParameter: Horizontal
-  m_BlendParameterY: Vertical
+  m_BlendParameter: Idle_Horiz
+  m_BlendParameterY: Idle_Vert
   m_MinThreshold: 0
   m_MaxThreshold: 1
   m_UseAutomaticThresholds: 1
@@ -249,6 +249,18 @@ AnimatorController:
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
   - m_Name: Horizontal
+    m_Type: 1
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
+  - m_Name: Idle_Vert
+    m_Type: 1
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
+  - m_Name: Idle_Horiz
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -293,10 +305,10 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 7004251780223653089}
-    m_Position: {x: 386.84775, y: 143.95294, z: 0}
+    m_Position: {x: 390, y: 140, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -8513973490575052306}
-    m_Position: {x: 340, y: 260, z: 0}
+    m_Position: {x: 200, y: 330, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
