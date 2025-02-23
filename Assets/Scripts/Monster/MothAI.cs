@@ -52,9 +52,15 @@ public class MothAI : MonoBehaviour
     private bool playerHit;
     private float stateTime;
 
+    private Animator monsterAnimator;
+    private const string animChase= "IsChasing";
+    private const string animIdle = "IsIdle";
+    private const string animAttack = "Attacking";
+
     private void Start()
     {
         target = new GameObject("MothTarget").transform;
+        monsterAnimator = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
@@ -109,6 +115,8 @@ public class MothAI : MonoBehaviour
             stateTime = 0.0f;
             previousState = MothState.IDLE;
             OnEnterIDLEState?.Invoke();
+            monsterAnimator.SetBool(animIdle, true);
+            monsterAnimator.SetBool(animChase, false);
         }
 
         if (stateTime >= idleTime)
@@ -134,6 +142,8 @@ public class MothAI : MonoBehaviour
             stateTime = 0.0f;
             previousState = MothState.WALK;
             OnEnterWalkState?.Invoke();
+            monsterAnimator.SetBool(animIdle, false);
+            monsterAnimator.SetBool(animChase, false);
         }
 
         if (agent.remainingDistance < 1.0f)
@@ -155,6 +165,8 @@ public class MothAI : MonoBehaviour
             stateTime = 0.0f;
             previousState = MothState.CHASE;
             OnEnterChaseState?.Invoke();
+            monsterAnimator.SetBool(animIdle, false);
+            monsterAnimator.SetBool(animChase, true);
         }
 
         agent.SetDestination(player.position);
@@ -206,9 +218,12 @@ public class MothAI : MonoBehaviour
                         controller.TakeHit();
                         playerHit = true;
                         OnHitPlayer?.Invoke();
+                        monsterAnimator.SetTrigger(animAttack);
                     }
                 }
             }
+
+            monsterAnimator.ResetTrigger(animAttack);
         }
     }
 
