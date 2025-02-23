@@ -3433,8 +3433,8 @@ MonoBehaviour:
   m_ShadowMesh:
     m_Mesh: {fileID: 0}
     m_LocalBounds:
-      m_Center: {x: 5.5, y: 7.25, z: 0}
-      m_Extent: {x: 10.5, y: 10.25, z: 0}
+      m_Center: {x: 5.5, y: 2.5, z: 0}
+      m_Extent: {x: 10.5, y: 5.5, z: 0}
     m_EdgeProcessing: 1
     m_TrimEdge: 0
     m_FlipX: 0
@@ -8217,9 +8217,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8345927003819824250}
     m_Modifications:
+    - target: {fileID: 1339030495772441664, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2389128562766139442, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3833033052700616118, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
       propertyPath: m_Name
       value: DoorInteraction (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8032387588504516485, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_PreviousShadowShape2DSource
+      value: 
+      objectReference: {fileID: 7281249091091436031}
+    - target: {fileID: 8032387588504516485, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Center.y
+      value: 0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: 8032387588504516485, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.y
+      value: 0.48999786
       objectReference: {fileID: 0}
     - target: {fileID: 8788970290838842283, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8227,7 +8247,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8788970290838842283, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.9
+      value: -1.07
       objectReference: {fileID: 0}
     - target: {fileID: 8788970290838842283, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8286,6 +8306,11 @@ BoxCollider2D:
 --- !u!4 &5920304361742595665 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8788970290838842283, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+  m_PrefabInstance: {fileID: 3157468207023250938}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &7281249091091436031 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 5682880697284545541, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
   m_PrefabInstance: {fileID: 3157468207023250938}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4115698296500578537
