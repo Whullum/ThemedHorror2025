@@ -11,6 +11,7 @@ public class LanternController : MonoBehaviour
     [SerializeField] private LayerMask collisionLayers;
     [SerializeField] private UnityEvent onMonsterDetected;
     [SerializeField] private UnityEvent onMonsterUndetected;
+    [SerializeField] private UnityEvent onFlashlightToggle;
     [SerializeField] private bool showDebug;
 
     private MothAI monster;
@@ -38,6 +39,7 @@ public class LanternController : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             ToggleLight(!lanternLight.enabled);
+            onFlashlightToggle?.Invoke();
         }
     }
 
