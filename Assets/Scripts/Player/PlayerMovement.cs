@@ -25,6 +25,8 @@ public class PlayerMovement : MonoBehaviour
     private Animator playerAnimator;
     private const string horizontalAnim = "Horizontal";
     private const string verticalAnim = "Vertical";
+    private const string idleHorizontalAnim = "Idle_Horiz";
+    private const string idleVerticalAnim = "Idle_Vert";
 
     private void Awake()
     {
@@ -81,6 +83,30 @@ public class PlayerMovement : MonoBehaviour
         else if (movementVector.x < 0.0f)
         {
             lantern.position = lanternPositions[2].position;
+        }
+
+        if (movementVector == Vector2.zero)
+        {
+            if (lantern.position == lanternPositions[0].position)
+            {
+                playerAnimator.SetFloat(idleHorizontalAnim, 0);
+                playerAnimator.SetFloat(idleVerticalAnim, 1);
+            }
+            else if (lantern.position == lanternPositions[1].position)
+            {
+                playerAnimator.SetFloat(idleHorizontalAnim, 0);
+                playerAnimator.SetFloat(idleVerticalAnim, -1);
+            }
+            else if (lantern.position == lanternPositions[3].position)
+            {
+                playerAnimator.SetFloat(idleHorizontalAnim, 1);
+                playerAnimator.SetFloat(idleVerticalAnim, 0);
+            }
+            else if (lantern.position == lanternPositions[2].position)
+            {
+                playerAnimator.SetFloat(idleHorizontalAnim, -1);
+                playerAnimator.SetFloat(idleVerticalAnim, 0);
+            }
         }
     }
 

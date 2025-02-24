@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
 
     private int currentLives;
     private float livesTime;
+    private bool death;
 
     private void Awake()
     {
@@ -43,8 +44,9 @@ public class PlayerController : MonoBehaviour
 
         hitShader.SetFloat("_VignettePower", shaderIntensity);
 
-        if (currentLives <= 0)
+        if (currentLives <= 0 && !death)
         {
+            death = true;
             OnPlayerDeath?.Invoke();
             GameManager.Instance.PlayerDeath();
         }
