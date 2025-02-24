@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Tilemap tilemap;
     [SerializeField] private UnityEvent OnPlayerDeath;
     [SerializeField] private UnityEvent OnPlayerHit;
+    [SerializeField] private UnityEvent OnLevelRestart;
 
 
     private void Awake()
@@ -26,11 +27,6 @@ public class GameManager : MonoBehaviour
         }
 
         Instance = this;
-    }
-
-    public void SetMothTarget(Transform target)
-    {
-
     }
 
     public void PlayerHit()
@@ -48,6 +44,7 @@ public class GameManager : MonoBehaviour
     public void ResetLevel()
     {
         SceneManager.LoadScene("MainLevel");
+        OnLevelRestart?.Invoke();
     }
 
     public void PauseGame()
