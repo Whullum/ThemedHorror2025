@@ -3533,8 +3533,8 @@ MonoBehaviour:
   m_ShadowMesh:
     m_Mesh: {fileID: 0}
     m_LocalBounds:
-      m_Center: {x: 5.5, y: 7.25, z: 0}
-      m_Extent: {x: 10.5, y: 10.25, z: 0}
+      m_Center: {x: -0.109375, y: 12.25, z: 0}
+      m_Extent: {x: 1.890625, y: 5.25, z: 0}
     m_EdgeProcessing: 1
     m_TrimEdge: 0
     m_FlipX: 0
@@ -9029,11 +9029,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8788970290838842283, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.12
+      value: 3.05
       objectReference: {fileID: 0}
     - target: {fileID: 8788970290838842283, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.99
+      value: 12.49
       objectReference: {fileID: 0}
     - target: {fileID: 8788970290838842283, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9073,7 +9073,7 @@ PrefabInstance:
       objectReference: {fileID: 7111429008458391489}
     - target: {fileID: 8950172569132693485, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
       propertyPath: m_ShadowMesh.m_LocalBounds.m_Center.y
-      value: -0.0000076293945
+      value: 0.0000076293945
       objectReference: {fileID: 0}
     - target: {fileID: 8950172569132693485, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
       propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.y

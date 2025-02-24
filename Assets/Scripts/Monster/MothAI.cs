@@ -38,6 +38,7 @@ public class MothAI : MonoBehaviour
     [SerializeField] private UnityEvent OnEnterIDLEState;
     [SerializeField] private UnityEvent OnEnterWalkState;
     [SerializeField] private UnityEvent OnEnterChaseState;
+    [SerializeField] private UnityEvent OnExitChaseState;
     [SerializeField] private UnityEvent OnEnterAttackState;
     [SerializeField] private UnityEvent OnHitPlayer;
 
@@ -53,7 +54,7 @@ public class MothAI : MonoBehaviour
     private float stateTime;
 
     private Animator monsterAnimator;
-    private const string animChase= "IsChasing";
+    private const string animChase = "IsChasing";
     private const string animIdle = "IsIdle";
     private const string animAttack = "Attacking";
 
@@ -181,10 +182,12 @@ public class MothAI : MonoBehaviour
         if (stateTime >= chaseTime && hit.collider != null && !hit.collider.CompareTag("Player"))
         {
             currentState = MothState.IDLE;
+            OnExitChaseState?.Invoke();
         }
         else if (Vector2.Distance(transform.position, player.position) <= attackDistance)
         {
             currentState = MothState.ATTACK;
+            OnExitChaseState?.Invoke();
         }
     }
 
@@ -195,6 +198,7 @@ public class MothAI : MonoBehaviour
             agent.isStopped = true;
             previousState = MothState.ATTACK;
             OnEnterAttackState?.Invoke();
+            stateTime = 0.0f;
         }
 
         if (playerHit)

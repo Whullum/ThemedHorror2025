@@ -42,11 +42,12 @@ public class GameManager : MonoBehaviour
     {
         OnPlayerDeath?.Invoke();
         UIManager.Instance.ToggleGameOverScreen(true);
+        Monster.SetActive(false);
     }
 
     public void ResetLevel()
     {
-        SceneManager.LoadScene("BuildLevel");
+        SceneManager.LoadScene("MainLevel");
     }
 
     public void PauseGame()
