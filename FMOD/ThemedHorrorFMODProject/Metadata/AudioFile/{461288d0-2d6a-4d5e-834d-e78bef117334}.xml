@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{461288d0-2d6a-4d5e-834d-e78bef117334}">
+		<property name="assetPath">
+			<value>Fire, Burst, Matches, Small Fire 02 SND8746 1.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.43098958333333331</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{3a77015b-8640-4d55-97bf-7e1a0d1a9be1}</destination>
+		</relationship>
+	</object>
+</objects>
