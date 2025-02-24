@@ -722,8 +722,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 389e5d757d1bce749bb225d9744c08e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 200
-  runSpeed: 400
+  walkSpeed: 150
+  runSpeed: 350
   runningMakesNoiseTime: 2
   lantern: {fileID: 418498749133685486}
   lanternPositions:

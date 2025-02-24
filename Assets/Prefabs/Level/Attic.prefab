@@ -2551,7 +2551,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerSpawnPoint: {fileID: 8762413475151324815}
   monsterSpawnPoint: {fileID: 4806637901135129023}
-  monsterActive: 0
+  monsterActive: 1
 --- !u!1 &6414257375568140884
 GameObject:
   m_ObjectHideFlags: 0
