@@ -6175,8 +6175,8 @@ RectTransform:
   m_AnchoredPosition: {x: -5, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!224 &1285953220 stripped
-RectTransform:
+--- !u!4 &1285953220 stripped
+Transform:
   m_CorrespondingSourceObject: {fileID: 8538295718926924002, guid: 1e3a804ae9400c74e8decf43f8c8c0ed, type: 3}
   m_PrefabInstance: {fileID: 2443226152178314121}
   m_PrefabAsset: {fileID: 0}
@@ -9639,7 +9639,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4097989420763964138, guid: feed99d417c0ba0479d8137244970c66, type: 3}
       propertyPath: mainSceneName
-      value: BuildLevel
+      value: MainLevel
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
