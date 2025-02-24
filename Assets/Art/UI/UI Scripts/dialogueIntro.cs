@@ -1,9 +1,6 @@
 using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using TMPro;
-using System.Runtime.InteropServices;
-using UnityEngine.Events;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class dialogueIntro : MonoBehaviour
@@ -19,23 +16,23 @@ public class dialogueIntro : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        textComponent.text=string.Empty;
+        textComponent.text = string.Empty;
         StartDialogue();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0))
         {
-            if(textComponent.text==lines[index])
+            if (textComponent.text == lines[index])
             {
                 NextLine();
             }
             else
             {
                 StopAllCoroutines();
-                textComponent.text=lines[index];
+                textComponent.text = lines[index];
             }
         }
     }
@@ -50,9 +47,9 @@ public class dialogueIntro : MonoBehaviour
 
     IEnumerator TypeLine()
     {
-        foreach(char c in lines[index].ToCharArray())
+        foreach (char c in lines[index].ToCharArray())
         {
-            textComponent.text+=c;
+            textComponent.text += c;
             yield return new WaitForSeconds(textSpeed);
 
         }
@@ -60,7 +57,7 @@ public class dialogueIntro : MonoBehaviour
 
     void NextLine()
     {
-        if (index<lines.Length-1)
+        if (index < lines.Length - 1)
         {
             index++;
             textComponent.text = string.Empty;
@@ -69,7 +66,14 @@ public class dialogueIntro : MonoBehaviour
         else
         {
             gameObject.SetActive(false);
-            SceneManager.LoadScene(mainSceneName);
+
+            if (FMODUnity.RuntimeManager.HasBankLoaded("Main-Music") &&
+                FMODUnity.RuntimeManager.HasBankLoaded("Main-Music.strings") &&
+                FMODUnity.RuntimeManager.HasBankLoaded("sfx"))
+            {
+                Debug.Log("All banks Bank Loaded");
+                SceneManager.LoadScene(mainSceneName);
+            }
         }
     }
 }

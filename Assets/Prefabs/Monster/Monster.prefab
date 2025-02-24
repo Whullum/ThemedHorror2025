@@ -132,7 +132,7 @@ MonoBehaviour:
   chaseTime: 2
   chaseSpeed: 3
   detectionRadius: 2
-  attackSpeed: 3
+  attackSpeed: 2
   attackDistance: 1.5
   visibleLayers:
     serializedVersion: 2
