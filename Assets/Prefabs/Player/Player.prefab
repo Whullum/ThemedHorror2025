@@ -196,6 +196,7 @@ GameObject:
   - component: {fileID: 119901813104602369}
   - component: {fileID: 6643200329911862899}
   - component: {fileID: 1955329089045730424}
+  - component: {fileID: 6644619964160297482}
   m_Layer: 3
   m_Name: Lantern
   m_TagString: Untagged
@@ -291,6 +292,21 @@ MonoBehaviour:
   onMonsterUndetected:
     m_PersistentCalls:
       m_Calls: []
+  onFlashlightToggle:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6644619964160297482}
+        m_TargetAssemblyTypeName: FMODUnity.StudioEventEmitter, FMODUnity
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   showDebug: 0
 --- !u!114 &1955329089045730424
 MonoBehaviour:
@@ -305,6 +321,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offset: -90
+--- !u!114 &6644619964160297482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3704519546505770065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 231657466
+      Data2: 1145341567
+      Data3: 137480382
+      Data4: 1280456892
+    Path: event:/ToggleFlashlight
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &3850494751032681404
 GameObject:
   m_ObjectHideFlags: 0
@@ -516,6 +563,7 @@ GameObject:
   - component: {fileID: 7327059116917656422}
   - component: {fileID: 5509345206457607707}
   - component: {fileID: 799732701441943818}
+  - component: {fileID: 2689591381129734471}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -737,7 +785,19 @@ MonoBehaviour:
       m_Calls: []
   OnPlayerDeath:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2689591381129734471}
+        m_TargetAssemblyTypeName: FMODUnity.StudioEventEmitter, FMODUnity
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!95 &799732701441943818
 Animator:
   serializedVersion: 7
@@ -760,6 +820,37 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2689591381129734471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8215891024696667928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 460567427
+      Data2: 1277340012
+      Data3: -1423052902
+      Data4: 2049741517
+    Path: event:/Moth-kill
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &8391194905759889435
 GameObject:
   m_ObjectHideFlags: 0

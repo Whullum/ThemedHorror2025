@@ -547,10 +547,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4805562978761983629, guid: f9dc03047c4ac734eb111e5daaf78499, type: 3}
       propertyPath: OnInteractionExecuted.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4805562978761983629, guid: f9dc03047c4ac734eb111e5daaf78499, type: 3}
       propertyPath: OnInteractionExecuted.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805562978761983629, guid: f9dc03047c4ac734eb111e5daaf78499, type: 3}
+      propertyPath: OnInteractionExecuted.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4805562978761983629, guid: f9dc03047c4ac734eb111e5daaf78499, type: 3}
@@ -558,7 +562,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4636427691199101952}
     - target: {fileID: 4805562978761983629, guid: f9dc03047c4ac734eb111e5daaf78499, type: 3}
+      propertyPath: OnInteractionExecuted.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1140600445179438129}
+    - target: {fileID: 4805562978761983629, guid: f9dc03047c4ac734eb111e5daaf78499, type: 3}
       propertyPath: OnInteractionExecuted.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805562978761983629, guid: f9dc03047c4ac734eb111e5daaf78499, type: 3}
+      propertyPath: OnInteractionExecuted.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4805562978761983629, guid: f9dc03047c4ac734eb111e5daaf78499, type: 3}
@@ -566,11 +578,23 @@ PrefabInstance:
       value: ToggleItem
       objectReference: {fileID: 0}
     - target: {fileID: 4805562978761983629, guid: f9dc03047c4ac734eb111e5daaf78499, type: 3}
+      propertyPath: OnInteractionExecuted.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805562978761983629, guid: f9dc03047c4ac734eb111e5daaf78499, type: 3}
       propertyPath: OnInteractionExecuted.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: ConfigurationItemHolder, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4805562978761983629, guid: f9dc03047c4ac734eb111e5daaf78499, type: 3}
+      propertyPath: OnInteractionExecuted.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: FMODUnity.StudioEventEmitter, FMODUnity
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805562978761983629, guid: f9dc03047c4ac734eb111e5daaf78499, type: 3}
       propertyPath: OnInteractionExecuted.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805562978761983629, guid: f9dc03047c4ac734eb111e5daaf78499, type: 3}
+      propertyPath: OnInteractionExecuted.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5652585812792291370, guid: f9dc03047c4ac734eb111e5daaf78499, type: 3}
@@ -580,10 +604,49 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5652585812792291370, guid: f9dc03047c4ac734eb111e5daaf78499, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1140600445179438129}
   m_SourcePrefab: {fileID: 100100000, guid: f9dc03047c4ac734eb111e5daaf78499, type: 3}
 --- !u!4 &3603980122980647145 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1800013780553978259, guid: f9dc03047c4ac734eb111e5daaf78499, type: 3}
   m_PrefabInstance: {fileID: 3096513007584203130}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7244887679975514448 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5652585812792291370, guid: f9dc03047c4ac734eb111e5daaf78499, type: 3}
+  m_PrefabInstance: {fileID: 3096513007584203130}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1140600445179438129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7244887679975514448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1922514565
+      Data2: 1124491826
+      Data3: 1739172258
+      Data4: -1819353211
+    Path: event:/ToggleCandle
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{d242e08a-b562-4a33-821d-7933b172bdea}">
+		<property name="assetPath">
+			<value>Equipment, Tactical, Flashlight, Button Press SND25822.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.05402083333333333</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{3a77015b-8640-4d55-97bf-7e1a0d1a9be1}</destination>
+		</relationship>
+	</object>
+</objects>
