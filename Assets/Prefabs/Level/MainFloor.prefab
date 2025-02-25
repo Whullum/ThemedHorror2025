@@ -2161,7 +2161,7 @@ TilemapCollider2D:
     m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_CompositeOperation: 1
+  m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
@@ -2232,203 +2232,9 @@ CompositeCollider2D:
   m_GeometryType: 0
   m_GenerationType: 0
   m_EdgeRadius: 0
-  m_ColliderPaths:
-  - m_Collider: {fileID: 7804080537749520849}
-    m_ColliderPaths:
-    - - X: 280000000
-        Y: 210000000
-      - X: -160000000
-        Y: 210000000
-      - X: -160000000
-        Y: 0
-      - X: 280000000
-        Y: 0
-    - - X: 190000000
-        Y: 70000000
-      - X: 190000000
-        Y: 120000000
-      - X: 220000000
-        Y: 120000000
-      - X: 220000000
-        Y: 130000000
-      - X: 190000000
-        Y: 130000000
-      - X: 190000000
-        Y: 160000000
-      - X: 240000000
-        Y: 160000000
-      - X: 240000000
-        Y: 120000000
-      - X: 250000000
-        Y: 120000000
-      - X: 250000000
-        Y: 170000000
-      - X: 190000000
-        Y: 170000000
-      - X: 190000000
-        Y: 200000000
-      - X: 270000000
-        Y: 200000000
-      - X: 270000000
-        Y: 10000000
-      - X: 190000000
-        Y: 10000000
-      - X: 190000000
-        Y: 30000000
-      - X: 180000000
-        Y: 30000000
-      - X: 180000000
-        Y: 10000000
-      - X: 60000000
-        Y: 10000000
-      - X: 60000000
-        Y: 30000000
-      - X: 50000000
-        Y: 30000000
-      - X: 50000000
-        Y: 10000000
-      - X: -70000000
-        Y: 10000000
-      - X: -70000000
-        Y: 40000000
-      - X: -120000000
-        Y: 40000000
-      - X: -120000000
-        Y: 30000000
-      - X: -80000000
-        Y: 30000000
-      - X: -80000000
-        Y: 10000000
-      - X: -150000000
-        Y: 10000000
-      - X: -150000000
-        Y: 30000000
-      - X: -140000000
-        Y: 30000000
-      - X: -140000000
-        Y: 40000000
-      - X: -150000000
-        Y: 40000000
-      - X: -150000000
-        Y: 120000000
-      - X: -140000000
-        Y: 120000000
-      - X: -140000000
-        Y: 130000000
-      - X: -150000000
-        Y: 130000000
-      - X: -150000000
-        Y: 200000000
-      - X: -80000000
-        Y: 200000000
-      - X: -80000000
-        Y: 170000000
-      - X: -110000000
-        Y: 170000000
-      - X: -110000000
-        Y: 160000000
-      - X: -70000000
-        Y: 160000000
-      - X: -70000000
-        Y: 200000000
-      - X: 180000000
-        Y: 200000000
-      - X: 180000000
-        Y: 70000000
-    - - X: 60000000
-        Y: 130000000
-      - X: 10000000
-        Y: 130000000
-      - X: 10000000
-        Y: 120000000
-      - X: 50000000
-        Y: 120000000
-      - X: 50000000
-        Y: 70000000
-      - X: 60000000
-        Y: 70000000
-    - - X: -70000000
-        Y: 120000000
-      - X: -30000000
-        Y: 120000000
-      - X: -30000000
-        Y: 130000000
-      - X: -120000000
-        Y: 130000000
-      - X: -120000000
-        Y: 120000000
-      - X: -80000000
-        Y: 120000000
-      - X: -80000000
-        Y: 60000000
-      - X: -70000000
-        Y: 60000000
+  m_ColliderPaths: []
   m_CompositePaths:
-    m_Paths:
-    - - {x: 27.999971, y: 0}
-      - {x: 27.999971, y: 21}
-      - {x: -16, y: 20.999971}
-      - {x: -15.999971, y: 0}
-    - - {x: 27, y: 1.0000294}
-      - {x: 19, y: 1.0000294}
-      - {x: 18.999971, y: 3}
-      - {x: 18, y: 2.999971}
-      - {x: 17.999971, y: 1}
-      - {x: 6, y: 1.0000294}
-      - {x: 5.999971, y: 3}
-      - {x: 5, y: 2.999971}
-      - {x: 4.9999704, y: 1}
-      - {x: -7, y: 1.0000294}
-      - {x: -7.0000296, y: 4}
-      - {x: -12, y: 3.999971}
-      - {x: -11.99997, y: 3}
-      - {x: -8, y: 2.9999707}
-      - {x: -8.00003, y: 1}
-      - {x: -15, y: 1.0000294}
-      - {x: -14.999971, y: 3}
-      - {x: -14, y: 3.0000293}
-      - {x: -14.000029, y: 4}
-      - {x: -15, y: 4.0000296}
-      - {x: -14.999971, y: 12}
-      - {x: -14, y: 12.00003}
-      - {x: -14.000029, y: 13}
-      - {x: -15, y: 13.00003}
-      - {x: -14.999971, y: 20}
-      - {x: -8, y: 19.999971}
-      - {x: -8.00003, y: 17}
-      - {x: -11, y: 16.999971}
-      - {x: -10.99997, y: 16}
-      - {x: -7, y: 16.000029}
-      - {x: -6.9999704, y: 20}
-      - {x: 18, y: 19.999971}
-      - {x: 18.000029, y: 7}
-      - {x: 19, y: 7.0000296}
-      - {x: 19.000029, y: 12}
-      - {x: 22, y: 12.00003}
-      - {x: 21.999971, y: 13}
-      - {x: 19, y: 13.00003}
-      - {x: 19.000029, y: 16}
-      - {x: 24, y: 15.999971}
-      - {x: 24.000029, y: 12}
-      - {x: 25, y: 12.00003}
-      - {x: 24.999971, y: 17}
-      - {x: 19, y: 17.000029}
-      - {x: 19.000029, y: 20}
-      - {x: 27, y: 19.999971}
-    - - {x: -7.0000296, y: 6}
-      - {x: -6.9999704, y: 12}
-      - {x: -3, y: 12.00003}
-      - {x: -3.0000293, y: 13}
-      - {x: -12, y: 12.99997}
-      - {x: -11.99997, y: 12}
-      - {x: -8, y: 11.99997}
-      - {x: -7.9999704, y: 6}
-    - - {x: 5.999971, y: 7}
-      - {x: 5.999971, y: 13}
-      - {x: 1, y: 12.99997}
-      - {x: 1.0000293, y: 12}
-      - {x: 5, y: 11.99997}
-      - {x: 5.000029, y: 7}
+    m_Paths: []
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
   m_UseDelaunayMesh: 0
@@ -2467,7 +2273,7 @@ MonoBehaviour:
   m_CastsShadows: 1
   m_SelfShadows: 0
   m_AlphaCutoff: 0.1
-  m_ApplyToSortingLayers: 00000000cdb05482891028476743f8806b3775bf09ebc493
+  m_ApplyToSortingLayers: 00000000cdb05482891028476743f8806b3775bf09ebc493ed54556a
   m_ShapePath:
   - {x: -18, y: -10, z: 0}
   - {x: -18, y: 31, z: 0}
@@ -3768,15 +3574,15 @@ MonoBehaviour:
   - {x: 21, y: -3.5, z: 0}
   m_ShapePathHash: 0
   m_InstanceId: 0
-  m_ShadowShape2DComponent: {fileID: 0}
+  m_ShadowShape2DComponent: {fileID: 3369539974610935735}
   m_ShadowShape2DProvider:
-    rid: 2090229148600500296
+    rid: 8302958245562548296
   m_ShadowCastingSource: 2
   m_ShadowMesh:
     m_Mesh: {fileID: 0}
     m_LocalBounds:
-      m_Center: {x: 5.5, y: 7.25, z: 0}
-      m_Extent: {x: 10.5, y: 10.25, z: 0}
+      m_Center: {x: 13.59375, y: 9.5, z: 0}
+      m_Extent: {x: 13.40625, y: 8.5, z: 0}
     m_EdgeProcessing: 1
     m_TrimEdge: 0
     m_FlipX: 0
@@ -3786,11 +3592,11 @@ MonoBehaviour:
   m_PreviousTrimEdge: 0
   m_PreviousEdgeProcessing: 1
   m_PreviousShadowCastingSource: 2
-  m_PreviousShadowShape2DSource: {fileID: 0}
+  m_PreviousShadowShape2DSource: {fileID: 3369539974610935735}
   references:
     version: 2
     RefIds:
-    - rid: 2090229148600500296
+    - rid: 8302958245562548296
       type: {class: ShadowShape2DProvider_Collider2D, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
       data: 
 --- !u!114 &3168556989931400324
@@ -3909,6 +3715,7 @@ MonoBehaviour:
   playerSpawnPoint: {fileID: 4818486723833923741}
   monsterSpawnPoint: {fileID: 1764348561060189888}
   monsterActive: 1
+  monsterSpeed: 6
 --- !u!1 &5838359801996402893
 GameObject:
   m_ObjectHideFlags: 0
@@ -3970,6 +3777,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6841345059073654682}
+  - {fileID: 7181969450994271778}
   - {fileID: 7918470645597099840}
   - {fileID: 4314869427300900005}
   - {fileID: 480358327630506769}
@@ -11856,13 +11664,49 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2131352115853507992}
     m_Modifications:
+    - target: {fileID: 181939631397576690, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 181939631397576690, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 181939631397576690, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 314594109989064240, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Center.x
+      value: -0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: 314594109989064240, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.x
+      value: 0.48999786
+      objectReference: {fileID: 0}
     - target: {fileID: 2389128562766139442, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2715122494163891846, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2715122494163891846, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.x
+      value: 0.48999023
+      objectReference: {fileID: 0}
     - target: {fileID: 3833033052700616118, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
       propertyPath: m_Name
       value: DoorInteraction (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4734781967448526643, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Center.x
+      value: -0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380854889508741512, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8788970290838842283, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11930,6 +11774,50 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2131352115853507992}
     m_Modifications:
+    - target: {fileID: 181939631397576690, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 181939631397576690, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 181939631397576690, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 225924308558813981, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Center.y
+      value: 0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: 225924308558813981, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.y
+      value: 0.48999786
+      objectReference: {fileID: 0}
+    - target: {fileID: 314594109989064240, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Center.x
+      value: -0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: 314594109989064240, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Center.y
+      value: 0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: 314594109989064240, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.x
+      value: 0.48999786
+      objectReference: {fileID: 0}
+    - target: {fileID: 314594109989064240, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.y
+      value: 0.48999786
+      objectReference: {fileID: 0}
+    - target: {fileID: 737965880693173334, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Center.y
+      value: 0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: 737965880693173334, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.y
+      value: 0.48999786
+      objectReference: {fileID: 0}
     - target: {fileID: 1339030495772441664, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.93
@@ -11938,9 +11826,37 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2715122494163891846, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Center.y
+      value: 0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: 2715122494163891846, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.y
+      value: 0.48999786
+      objectReference: {fileID: 0}
     - target: {fileID: 3833033052700616118, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
       propertyPath: m_Name
       value: DoorInteraction (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4734781967448526643, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4734781967448526643, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Center.y
+      value: 0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: 4734781967448526643, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.x
+      value: 0.4900055
+      objectReference: {fileID: 0}
+    - target: {fileID: 4734781967448526643, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.y
+      value: 0.48999786
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380854889508741512, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8788970290838842283, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12000,6 +11916,73 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8788970290838842283, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
   m_PrefabInstance: {fileID: 1273798892444388805}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1573275374313815744
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4522158327347920951}
+    m_Modifications:
+    - target: {fileID: 6190481438756954983, guid: 1e3a804ae9400c74e8decf43f8c8c0ed, type: 3}
+      propertyPath: m_Name
+      value: NoteBase (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7783580548504013177, guid: 1e3a804ae9400c74e8decf43f8c8c0ed, type: 3}
+      propertyPath: text
+      value: '"It can hear you, don''t make noise, don''t run or you will attract
+        it, and remember, hide and turn off the light if you feel its presence."'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8538295718926924002, guid: 1e3a804ae9400c74e8decf43f8c8c0ed, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 23.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 8538295718926924002, guid: 1e3a804ae9400c74e8decf43f8c8c0ed, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 18.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 8538295718926924002, guid: 1e3a804ae9400c74e8decf43f8c8c0ed, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8538295718926924002, guid: 1e3a804ae9400c74e8decf43f8c8c0ed, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8538295718926924002, guid: 1e3a804ae9400c74e8decf43f8c8c0ed, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8538295718926924002, guid: 1e3a804ae9400c74e8decf43f8c8c0ed, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8538295718926924002, guid: 1e3a804ae9400c74e8decf43f8c8c0ed, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8538295718926924002, guid: 1e3a804ae9400c74e8decf43f8c8c0ed, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8538295718926924002, guid: 1e3a804ae9400c74e8decf43f8c8c0ed, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8538295718926924002, guid: 1e3a804ae9400c74e8decf43f8c8c0ed, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1e3a804ae9400c74e8decf43f8c8c0ed, type: 3}
+--- !u!4 &7181969450994271778 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8538295718926924002, guid: 1e3a804ae9400c74e8decf43f8c8c0ed, type: 3}
+  m_PrefabInstance: {fileID: 1573275374313815744}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1669756403593006559
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12008,6 +11991,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2131352115853507992}
     m_Modifications:
+    - target: {fileID: 225924308558813981, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Center.x
+      value: 0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: 314594109989064240, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.x
+      value: 0.48999023
+      objectReference: {fileID: 0}
     - target: {fileID: 1339030495772441664, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.93
@@ -12019,6 +12010,10 @@ PrefabInstance:
     - target: {fileID: 3833033052700616118, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
       propertyPath: m_Name
       value: DoorInteraction (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380854889508741512, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8788970290838842283, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12086,6 +12081,50 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2131352115853507992}
     m_Modifications:
+    - target: {fileID: 181939631397576690, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 181939631397576690, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 181939631397576690, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 225924308558813981, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Center.x
+      value: 0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: 225924308558813981, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Center.y
+      value: -0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: 225924308558813981, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.y
+      value: 0.48999786
+      objectReference: {fileID: 0}
+    - target: {fileID: 314594109989064240, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Center.x
+      value: -0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: 314594109989064240, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Center.y
+      value: -0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: 314594109989064240, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.x
+      value: 0.48999786
+      objectReference: {fileID: 0}
+    - target: {fileID: 314594109989064240, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.y
+      value: 0.48999786
+      objectReference: {fileID: 0}
+    - target: {fileID: 737965880693173334, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.y
+      value: 0.48999023
+      objectReference: {fileID: 0}
     - target: {fileID: 1339030495772441664, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.93
@@ -12094,9 +12133,37 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2715122494163891846, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Center.y
+      value: -0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: 2715122494163891846, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.y
+      value: 0.48999786
+      objectReference: {fileID: 0}
     - target: {fileID: 3833033052700616118, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
       propertyPath: m_Name
       value: DoorInteraction (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4734781967448526643, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4734781967448526643, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Center.y
+      value: -0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: 4734781967448526643, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.x
+      value: 0.48999023
+      objectReference: {fileID: 0}
+    - target: {fileID: 4734781967448526643, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.y
+      value: 0.48999786
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380854889508741512, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8788970290838842283, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12320,13 +12387,69 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2131352115853507992}
     m_Modifications:
+    - target: {fileID: 181939631397576690, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 181939631397576690, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 181939631397576690, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 225924308558813981, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Center.y
+      value: 0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: 225924308558813981, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.y
+      value: 0.48999786
+      objectReference: {fileID: 0}
+    - target: {fileID: 314594109989064240, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Center.x
+      value: -0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: 314594109989064240, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Center.y
+      value: 0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: 314594109989064240, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.x
+      value: 0.48999786
+      objectReference: {fileID: 0}
+    - target: {fileID: 314594109989064240, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.y
+      value: 0.48999786
+      objectReference: {fileID: 0}
     - target: {fileID: 2389128562766139442, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2715122494163891846, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Center.x
+      value: -0.0000076293945
+      objectReference: {fileID: 0}
     - target: {fileID: 3833033052700616118, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
       propertyPath: m_Name
       value: DoorInteraction (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4734781967448526643, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Center.x
+      value: -0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: 4734781967448526643, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Center.y
+      value: 0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: 4734781967448526643, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.y
+      value: 0.48999786
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380854889508741512, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8788970290838842283, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12460,13 +12583,69 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2131352115853507992}
     m_Modifications:
+    - target: {fileID: 181939631397576690, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 181939631397576690, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 181939631397576690, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 225924308558813981, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Center.y
+      value: -0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: 225924308558813981, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.y
+      value: 0.48999786
+      objectReference: {fileID: 0}
+    - target: {fileID: 314594109989064240, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Center.y
+      value: -0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: 314594109989064240, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.y
+      value: 0.48999786
+      objectReference: {fileID: 0}
+    - target: {fileID: 737965880693173334, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Center.y
+      value: -0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: 737965880693173334, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.y
+      value: 0.48999786
+      objectReference: {fileID: 0}
     - target: {fileID: 2389128562766139442, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2715122494163891846, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Center.y
+      value: -0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: 2715122494163891846, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.y
+      value: 0.48999786
+      objectReference: {fileID: 0}
     - target: {fileID: 3833033052700616118, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
       propertyPath: m_Name
       value: DoorInteraction (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4734781967448526643, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Center.y
+      value: -0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: 4734781967448526643, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.y
+      value: 0.48999786
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380854889508741512, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8788970290838842283, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12596,13 +12775,53 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2131352115853507992}
     m_Modifications:
+    - target: {fileID: 225924308558813981, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.y
+      value: 0.48999023
+      objectReference: {fileID: 0}
+    - target: {fileID: 314594109989064240, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Center.x
+      value: -0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: 314594109989064240, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.x
+      value: 0.48999786
+      objectReference: {fileID: 0}
+    - target: {fileID: 314594109989064240, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.y
+      value: 0.48999023
+      objectReference: {fileID: 0}
+    - target: {fileID: 737965880693173334, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Center.y
+      value: 0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: 737965880693173334, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.y
+      value: 0.48999786
+      objectReference: {fileID: 0}
     - target: {fileID: 2389128562766139442, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2715122494163891846, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Center.y
+      value: -0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: 2715122494163891846, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.y
+      value: 0.48999786
+      objectReference: {fileID: 0}
     - target: {fileID: 3833033052700616118, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
       propertyPath: m_Name
       value: DoorInteraction (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4734781967448526643, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.y
+      value: 0.48999023
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380854889508741512, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8788970290838842283, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12662,13 +12881,61 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2131352115853507992}
     m_Modifications:
+    - target: {fileID: 225924308558813981, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.y
+      value: 0.48999023
+      objectReference: {fileID: 0}
+    - target: {fileID: 314594109989064240, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Center.x
+      value: -0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: 314594109989064240, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.x
+      value: 0.48999786
+      objectReference: {fileID: 0}
+    - target: {fileID: 314594109989064240, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.y
+      value: 0.48999023
+      objectReference: {fileID: 0}
+    - target: {fileID: 737965880693173334, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 737965880693173334, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Center.y
+      value: 0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: 737965880693173334, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.x
+      value: 0.4900055
+      objectReference: {fileID: 0}
+    - target: {fileID: 737965880693173334, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.y
+      value: 0.48999786
+      objectReference: {fileID: 0}
     - target: {fileID: 2389128562766139442, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2715122494163891846, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Center.y
+      value: -0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: 2715122494163891846, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.y
+      value: 0.48999786
+      objectReference: {fileID: 0}
     - target: {fileID: 3833033052700616118, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
       propertyPath: m_Name
       value: DoorInteraction (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4734781967448526643, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.y
+      value: 0.48999023
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380854889508741512, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8788970290838842283, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12895,13 +13162,101 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2131352115853507992}
     m_Modifications:
+    - target: {fileID: 181939631397576690, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 181939631397576690, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 181939631397576690, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 225924308558813981, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 225924308558813981, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Center.y
+      value: 0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: 225924308558813981, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.x
+      value: 0.4900055
+      objectReference: {fileID: 0}
+    - target: {fileID: 225924308558813981, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.y
+      value: 0.48999786
+      objectReference: {fileID: 0}
+    - target: {fileID: 314594109989064240, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Center.x
+      value: -0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: 314594109989064240, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Center.y
+      value: 0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: 314594109989064240, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.x
+      value: 0.48999786
+      objectReference: {fileID: 0}
+    - target: {fileID: 314594109989064240, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.y
+      value: 0.48999786
+      objectReference: {fileID: 0}
+    - target: {fileID: 737965880693173334, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 737965880693173334, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Center.y
+      value: 0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: 737965880693173334, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.x
+      value: 0.4900055
+      objectReference: {fileID: 0}
+    - target: {fileID: 737965880693173334, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.y
+      value: 0.48999786
+      objectReference: {fileID: 0}
     - target: {fileID: 2389128562766139442, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2715122494163891846, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2715122494163891846, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Center.y
+      value: 0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: 2715122494163891846, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.x
+      value: 0.4900055
+      objectReference: {fileID: 0}
+    - target: {fileID: 2715122494163891846, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.y
+      value: 0.48999786
+      objectReference: {fileID: 0}
     - target: {fileID: 3833033052700616118, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
       propertyPath: m_Name
       value: DoorInteraction
+      objectReference: {fileID: 0}
+    - target: {fileID: 4734781967448526643, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Center.y
+      value: 0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: 4734781967448526643, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.y
+      value: 0.48999786
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380854889508741512, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8788970290838842283, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12969,13 +13324,85 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2131352115853507992}
     m_Modifications:
+    - target: {fileID: 181939631397576690, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 181939631397576690, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 181939631397576690, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 225924308558813981, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Center.x
+      value: -0.000015258789
+      objectReference: {fileID: 0}
+    - target: {fileID: 225924308558813981, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Center.y
+      value: -0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: 225924308558813981, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.x
+      value: 0.4900055
+      objectReference: {fileID: 0}
+    - target: {fileID: 225924308558813981, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.y
+      value: 0.48999786
+      objectReference: {fileID: 0}
+    - target: {fileID: 314594109989064240, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Center.y
+      value: -0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: 314594109989064240, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.y
+      value: 0.48999786
+      objectReference: {fileID: 0}
+    - target: {fileID: 737965880693173334, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Center.y
+      value: -0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: 737965880693173334, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.y
+      value: 0.48999786
+      objectReference: {fileID: 0}
     - target: {fileID: 2389128562766139442, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2715122494163891846, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Center.x
+      value: -0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: 2715122494163891846, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Center.y
+      value: -0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: 2715122494163891846, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.y
+      value: 0.48999786
+      objectReference: {fileID: 0}
     - target: {fileID: 3833033052700616118, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
       propertyPath: m_Name
       value: DoorInteraction (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4734781967448526643, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Center.x
+      value: -0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: 4734781967448526643, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Center.y
+      value: -0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: 4734781967448526643, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_ShadowMesh.m_LocalBounds.m_Extent.y
+      value: 0.48999786
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380854889508741512, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8788970290838842283, guid: 0a62c0b89a1043842a0d0b9ee55bfa29, type: 3}
       propertyPath: m_LocalPosition.x

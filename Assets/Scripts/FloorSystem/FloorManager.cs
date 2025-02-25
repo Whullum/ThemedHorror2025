@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.AI;
 
 public class FloorManager : MonoBehaviour
 {
@@ -35,6 +36,7 @@ public class FloorManager : MonoBehaviour
                 if (floors[i].MonsterActive)
                 {
                     GameManager.Instance.Monster.SetActive(true);
+                    GameManager.Instance.Monster.GetComponent<NavMeshAgent>().speed = floors[i].MonsterSpeed;
                 }
                 else
                 {
