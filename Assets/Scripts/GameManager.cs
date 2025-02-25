@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private UnityEvent OnPlayerDeath;
     [SerializeField] private UnityEvent OnPlayerHit;
     [SerializeField] private UnityEvent OnLevelRestart;
+    [SerializeField] private UnityEvent OnStart;
 
 
     private void Awake()
@@ -28,6 +29,11 @@ public class GameManager : MonoBehaviour
         }
 
         Instance = this;
+    }
+
+    private void Start()
+    {
+        OnStart?.Invoke();
     }
 
     public void PlayerHit()
