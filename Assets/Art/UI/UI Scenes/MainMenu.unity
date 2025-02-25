@@ -9694,6 +9694,20 @@ PrefabInstance:
       propertyPath: mainSceneName
       value: MainLevel
       objectReference: {fileID: 0}
+    - target: {fileID: 4097989420763964138, guid: feed99d417c0ba0479d8137244970c66, type: 3}
+      propertyPath: 'lines.Array.data[0]'
+      value: Recurring nightmares torment you with visions of a decaying mansion
+        and a terrifying insect creature.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4097989420763964138, guid: feed99d417c0ba0479d8137244970c66, type: 3}
+      propertyPath: 'lines.Array.data[1]'
+      value: Tonight, the dream's grip tightens, feeling disturbingly real; you must
+        escape its nightmare realm.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4097989420763964138, guid: feed99d417c0ba0479d8137244970c66, type: 3}
+      propertyPath: 'lines.Array.data[2]'
+      value: The monster fears light, so when you see it, seek refuge in the shadows.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
