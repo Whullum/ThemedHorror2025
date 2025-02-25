@@ -1,3 +1,4 @@
+using FMOD.Studio;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
@@ -38,7 +39,7 @@ public class GameManager : MonoBehaviour
     {
         OnPlayerDeath?.Invoke();
         UIManager.Instance.ToggleGameOverScreen(true);
-        Monster.SetActive(false);
+        //Monster.SetActive(false);
     }
 
     public void ResetLevel()
