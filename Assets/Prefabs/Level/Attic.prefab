@@ -10182,7 +10182,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7291350123387082041, guid: 2e6a08841f3bb174596287b376906e54, type: 3}
       propertyPath: floorNumber
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
