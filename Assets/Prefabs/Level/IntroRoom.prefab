@@ -2685,8 +2685,8 @@ MonoBehaviour:
   m_ShadowMesh:
     m_Mesh: {fileID: 0}
     m_LocalBounds:
-      m_Center: {x: 8, y: 9.5, z: 0}
-      m_Extent: {x: 6, y: 3.5, z: 0}
+      m_Center: {x: 7.5, y: 32, z: 0}
+      m_Extent: {x: 5.5, y: 7, z: 0}
     m_EdgeProcessing: 1
     m_TrimEdge: 0
     m_FlipX: 0
@@ -5790,6 +5790,11 @@ PrefabInstance:
     - target: {fileID: 6190481438756954983, guid: 1e3a804ae9400c74e8decf43f8c8c0ed, type: 3}
       propertyPath: m_Name
       value: Note - Warning
+      objectReference: {fileID: 0}
+    - target: {fileID: 7783580548504013177, guid: 1e3a804ae9400c74e8decf43f8c8c0ed, type: 3}
+      propertyPath: text
+      value: '"There''s the net floor... What are those strange noises coming from
+        there?"'
       objectReference: {fileID: 0}
     - target: {fileID: 8538295718926924002, guid: 1e3a804ae9400c74e8decf43f8c8c0ed, type: 3}
       propertyPath: m_LocalPosition.x

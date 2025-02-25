@@ -13,7 +13,7 @@ public class LoadBanks : MonoBehaviour
     FMODUnity.RuntimeManager.HasBankLoaded("Main-Music.strings") &&
     FMODUnity.RuntimeManager.HasBankLoaded("sfx"))
         {
-            SceneManager.LoadScene("MainLevel");
+            SceneManager.LoadScene("MainMenu");
         }
     }
 }
